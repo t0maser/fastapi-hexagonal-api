@@ -1,32 +1,33 @@
-# FastAPI Hexagonal Architecture Scaffold
+# Plantilla de Arquitectura Hexagonal con FastAPI
 
-This repository contains a scaffold for a FastAPI project following the principles of hexagonal architecture. It includes:
+Este proyecto es una plantilla para construir APIs utilizando FastAPI con una arquitectura hexagonal. Proporciona una estructura modular y limpia para comenzar rápidamente.
 
-- **FastAPI**: A modern, fast (high-performance) web framework for building APIs with Python.
-- **Hexagonal Architecture**: Ensures separation of concerns and modularity.
+## Características
+- **FastAPI**: Un framework moderno y rápido para construir APIs con Python.
+- **Arquitectura Hexagonal**: Un patrón de diseño que promueve la separación de responsabilidades y la modularidad.
 
-## Getting Started
+## Cómo Empezar
 
-1. Install dependencies:
+1. Instala las dependencias:
    ```bash
    pip install -r requirements.txt
    ```
 
-2. Run the server:
+2. Ejecuta la aplicación:
    ```bash
    uvicorn main:app --reload
    ```
 
-3. Access the API documentation:
-   - Swagger UI: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-   - ReDoc: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
+3. Accede a la documentación de la API en:
+   - Swagger UI: `http://127.0.0.1:8000/docs`
+   - ReDoc: `http://127.0.0.1:8000/redoc`
 
-## Project Structure
+## Estructura del Proyecto
+- `main.py`: Punto de entrada de la aplicación.
+- `adapters/`: Contiene los adaptadores de la API.
+- `application/`: Contiene los servicios y casos de uso.
+- `domain/`: Contiene las entidades y lógica de negocio.
+- `infrastructure/`: Contiene configuraciones y detalles técnicos.
 
-- `main.py`: Entry point of the application.
-- `requirements.txt`: Lists the dependencies.
-- `.github/copilot-instructions.md`: Custom instructions for Copilot.
-
-## Contributing
-
-Feel free to fork this repository and submit pull requests for improvements.
+## Licencia
+Este proyecto está licenciado bajo la Licencia MIT.
